@@ -4,11 +4,26 @@ Version: 1.0.0
 
 Document Type: Project Roadmap
 
-Document Status: In Progress
+Document Status: Stale build-log — see Status Reconciliation below (the Phase/Step statuses are historical)
 
 Purpose:
 
 Track the Phase and Step build sequence defined in `00-Foundation/00_FOUNDATION_BLUEPRINT.md` (Build Execution Sequence) and `00-Foundation/01_PROJECT_VISION.md` (Project Lifecycle), and link each unit of work to its implementation, prompt, and verification documents as they're authored.
+
+---
+
+## ⚠️ Status Reconciliation (2026-07-22 — MNT-5)
+
+**The Phase/Step status table below is historical and inaccurate.** This build roadmap was intended as a per-step build log authored one step at a time; that authoring never happened, so every row still reads `Not Started` — even though the platform is substantially implemented (~20 Maven modules, 3 runnable Spring Boot apps, a working autonomous QA pipeline).
+
+Authoritative sources instead:
+
+- **Actual implemented state:** `AI-QA-OS-Documentation.md` (workspace architecture doc set).
+- **Forward plan (frozen):** `AI-QA-OS-Improvement-Roadmap.md` (v2.2.0).
+- **Live per-item status:** `AI-QA-OS-Implementation-Tracker.md`.
+- **Architecture rationale:** `AI-QA-OS-Architecture-Decisions.md`.
+
+The table below is retained unchanged for historical context only. Per-step reconciliation (mapping each phase/step to the actual modules) is intentionally **not fabricated** here — see ADR-009 (Decision & roadmap-honesty discipline).
 
 ---
 
@@ -66,6 +81,6 @@ Rows link to files that do not exist yet — they are created one Step at a time
 
 # Document Completion Status
 
-Status: In Progress
+Status: Stale build-log — reconciled 2026-07-22 (MNT-5). The Phase/Step statuses above are historical; see the Status Reconciliation banner for authoritative sources.
 
-Version: 1.0.0
+Version: 1.1.0
