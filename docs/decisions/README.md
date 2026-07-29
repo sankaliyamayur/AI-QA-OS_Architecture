@@ -8,7 +8,7 @@ The platform's ADRs are maintained as a **single canonical log** in the workspac
 
 **`AI-QA-OS-Architecture-Decisions.md`**
 
-It currently records twenty ADRs:
+It currently records forty-three ADRs:
 
 | ADR | Title | Status |
 |---|---|---|
@@ -32,6 +32,29 @@ It currently records twenty ADRs:
 | ADR-018 | Artifact object storage via a client seam + opt-in age retention | Accepted — Partial |
 | ADR-019 | Module↔package naming convention + MDC correlation-id propagation | Accepted |
 | ADR-020 | Raw-OTel tracing: config-gated export + span instrumentation | Accepted |
+| ADR-021 | Vector store standardization: Qdrant + In-Memory | Accepted |
+| ADR-022 | Semantic & prompt cache for AI invocations | Accepted |
+| ADR-023 | Sharded cross-browser execution matrix (fan-out over virtual threads) | Accepted |
+| ADR-024 | Single migration owner + per-service connection pools (shared schema by design) | Accepted |
+| ADR-025 | LLM cost-quota enforcement at the provider choke point (soft cap) | Accepted |
+| ADR-026 | Unified AI audit trail by aggregation over run-keyed sources | Accepted |
+| ADR-027 | Deterministic weighted prompt A/B routing + leaderboard over PE-1 scores | Accepted |
+| ADR-028 | Durable version registry with pin/rollback behind a store seam (prompt now, generic for model) | Accepted |
+| ADR-029 | Responsible-AI policy as a config-driven guardrail at the SEC-3 boundary (OPA deferred) | Accepted |
+| ADR-030 | Real PII masking in `ai-qa-os-testdata`: classification-driven, pluggable strategies, format-preserving default | Accepted |
+| ADR-031 | Close the continuous-learning loop via recorded improvement proposals; adoption gated on LRN-4 | Accepted |
+| ADR-032 | Safe-adoption gate: core contract + Brain impl reusing the confidence gate + an eval threshold | Accepted |
+| ADR-033 | Autonomous locator healing: deterministic heuristic healer behind a seam + confidence-gated auto-apply | Accepted |
+| ADR-034 | Learning metrics computed in-module over a supplied observation series | Accepted |
+| ADR-035 | Healing approval: strict confidence tier for script edits + in-module approval lifecycle | Accepted |
+| ADR-036 | Plugin architecture: in-process contract + lifecycle registry with semver + permission governance | Accepted |
+| ADR-037 | Integration plugins normalised on the PLG-1 contract via delegating adapters + governed registrar | Accepted |
+| ADR-038 | Learning loop closed end-to-end: LRN-1 proposals gated through the LRN-4 safe-adoption gate | Accepted |
+| ADR-039 | Self-healing loop closed end-to-end: HEAL-1 locator proposal governed by the HEAL-2 approval workflow | Accepted |
+| ADR-040 | Governance loop closed: version promotion policy-gated by the Responsible-AI policy | Accepted |
+| ADR-041 | Multi-tenancy foundation: tenant-context contract in `core` with thread-local + MDC propagation | Accepted |
+| ADR-042 | `ai-qa-os-tenant` module: tenant registry seam + active-only resolver over the `core` context | Accepted |
+| ADR-043 | Gateway tenant-resolution filter: request-scoped tenant binding (ENT-1 FI-ENT1-B) | Accepted |
 
 ## Convention
 
