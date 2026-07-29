@@ -8,7 +8,7 @@ The platform's ADRs are maintained as a **single canonical log** in the workspac
 
 **`AI-QA-OS-Architecture-Decisions.md`**
 
-It currently records forty-three ADRs:
+It currently records forty-nine ADRs:
 
 | ADR | Title | Status |
 |---|---|---|
@@ -55,6 +55,12 @@ It currently records forty-three ADRs:
 | ADR-041 | Multi-tenancy foundation: tenant-context contract in `core` with thread-local + MDC propagation | Accepted |
 | ADR-042 | `ai-qa-os-tenant` module: tenant registry seam + active-only resolver over the `core` context | Accepted |
 | ADR-043 | Gateway tenant-resolution filter: request-scoped tenant binding (ENT-1 FI-ENT1-B) | Accepted |
+| ADR-044 | `ai-qa-os-notification` module: single governed egress point via a channel-sender SPI | Accepted |
+| ADR-045 | First-class agent roster catalog (AGT-1 increment) | Accepted |
+| ADR-046 | Tenant-scoped cross-run healing memory over `MemoryStore` | Accepted |
+| ADR-047 | Healing analytics read-model via a pure assembler (HEAL-3 backend increment) | Accepted |
+| ADR-048 | Extension SDK: uniform `Extension` SPI in `core` + governed registry in `integration` | Accepted |
+| ADR-049 | Centralised event→notification routing + templating over MOD-2 | Accepted |
 
 ## Convention
 
