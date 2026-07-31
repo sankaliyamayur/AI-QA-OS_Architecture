@@ -8,7 +8,7 @@ The platform's ADRs are maintained as a **single canonical log** in the workspac
 
 **`AI-QA-OS-Architecture-Decisions.md`**
 
-It currently records forty-nine ADRs:
+It currently records fifty-two ADRs:
 
 | ADR | Title | Status |
 |---|---|---|
@@ -61,6 +61,9 @@ It currently records forty-nine ADRs:
 | ADR-047 | Healing analytics read-model via a pure assembler (HEAL-3 backend increment) | Accepted |
 | ADR-048 | Extension SDK: uniform `Extension` SPI in `core` + governed registry in `integration` | Accepted |
 | ADR-049 | Centralised event→notification routing + templating over MOD-2 | Accepted |
+| ADR-050 | Learning-dashboard read-model + health signal in `learning` (LRN-3 backend increment) | Accepted |
+| ADR-051 | Prompt-quality read-model over the PE-2 leaderboard (PE-3 backend increment) | Accepted |
+| ADR-052 | RBAC admin read-model over the security entities (ENT-4 backend increment) | Accepted |
 
 ## Convention
 
