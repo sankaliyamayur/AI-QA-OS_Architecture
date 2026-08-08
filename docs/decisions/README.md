@@ -8,7 +8,7 @@ The platform's ADRs are maintained as a **single canonical log** in the workspac
 
 **`AI-QA-OS-Architecture-Decisions.md`**
 
-It currently records fifty-two ADRs:
+It currently records eighty-seven ADRs:
 
 | ADR | Title | Status |
 |---|---|---|
@@ -64,6 +64,41 @@ It currently records fifty-two ADRs:
 | ADR-050 | Learning-dashboard read-model + health signal in `learning` (LRN-3 backend increment) | Accepted |
 | ADR-051 | Prompt-quality read-model over the PE-2 leaderboard (PE-3 backend increment) | Accepted |
 | ADR-052 | RBAC admin read-model over the security entities (ENT-4 backend increment) | Accepted |
+| ADR-053 | Local infrastructure stack: a `compose` Spring profile over provisioned containers, with real service bindings deferred to their consumers | Accepted |
+| ADR-054 | Row-level persistence tenancy via Hibernate `@TenantId` discriminator (FI-ENT1-C pilot) | Accepted |
+| ADR-055 | Tenant-scoped RBAC: users tenant-owned, roles a global catalog, JWT-authoritative tenant (FI-ENT1-D) | Accepted |
+| ADR-056 | Tenant-scoped memory, cost & artifact: `@TenantId` on the durable rows + tenant key-prefix for blobs (FI-ENT1-E) | Accepted |
+| ADR-057 | Tenant-scope the remaining operational tables; catalogs global, telemetry system-scoped (FI-ENT1-C extension) | Accepted |
+| ADR-058 | Credential entities (session, API key) are tenant-attributed, not `@TenantId`-discriminated (FI-ENT1-D slice 2) | Accepted |
+| ADR-059 | Runtime tenant-scoping of short-term memory, vector search, and local artifacts (FI-ENT1-E slice 2) | Accepted |
+| ADR-060 | In-process `EventBus` coordination seam over `core` `BaseEvent`; distributed binding deferred (SCALE-2) | Accepted |
+| ADR-061 | Bridge the `core` `EventBus` seam to Spring events during publisher migration (FI-SCALE2-A) | Accepted |
+| ADR-062 | Serve dashboard read-models by aggregating persisted data; PE-3 from `eval_results`, LRN-3 deferred (no faithful source) | Accepted |
+| ADR-063 | LRN-3 dashboard deferred: its observation pipeline is unbuilt; no empty-dashboard scaffolding | Accepted |
+| ADR-064 | Distributed `EventBus` over Kafka: `KafkaEventBus` behind an optional dependency (SCALE-2 Kafka binding) | Accepted |
+| ADR-065 | Distributed `ExecutionJobQueue` over Redis Streams: `RedisStreamExecutionJobQueue` behind an optional dependency (SCALE-1) | Accepted |
+| ADR-066 | User↔role mapping via `@ElementCollection` + role-derived authorities (FI-ENT4-C) | Accepted |
+| ADR-067 | Admin write-ops API at `/api/admin/**` on the enforced chain, ADMIN-gated (FI-ENT4-A) | Accepted |
+| ADR-068 | Real object-storage binding over S3: `S3ObjectStorageClient` behind an optional dependency (ENT-5) | Accepted |
+| ADR-069 | Prompt regression detection via temporal within-version score decline (FI-PE3-B) | Accepted |
+| ADR-070 | HEAL-3 locator-drift ranking (FI-HEAL3-B) deferred: no faithful, enumerable drift source | Accepted |
+| ADR-071 | Execution-worker artifact upload into `ArtifactStore` via a deterministic key (FI-ENT5-A) | Accepted |
+| ADR-072 | HEAL-3 persisted locator store (FI-HEAL3-A) deferred: the locator-healing subsystem is unwired end-to-end | Accepted |
+| ADR-073 | Serve execution artifacts from `ArtifactStore` via an additive key endpoint (FI-ENT5-C) | Accepted |
+| ADR-074 | Runnable backup CronJobs to object storage (FI-ENT5-B) | Accepted |
+| ADR-075 | Per-workflow token/context budgeting mirroring the ENT-3 cost soft-cap (AI-6) | Accepted |
+| ADR-076 | Artifact content signing (HMAC-SHA256) for tamper-evidence (SEC-6) | Accepted |
+| ADR-077 | Remove the orphan `ai-qa-os-data` module (MOD-5: fold in) | Accepted |
+| ADR-078 | Complete Claude (Anthropic Messages API) + wire Ollama local model (AI-5) | Accepted |
+| ADR-079 | Declarative plugin manifest loader (DX-5 Plugin SDK) | Accepted |
+| ADR-080 | Plugin marketplace catalog (PLG-4 foundation) + full-service architecture | Accepted |
+| ADR-081 | Compliance control catalog + coverage read-model (GOV-2) | Accepted |
+| ADR-082 | QA Brain maturity model + stage assessor (BRAIN-1 foundation) + evolution architecture | Accepted |
+| ADR-083 | Multi-agent collaboration mediator (AGT-2 foundation) + org architecture | Accepted |
+| ADR-084 | Tenant-aware, self-timed artifact retention sweep (FI-ENT5-F) | Accepted |
+| ADR-085 | Per-execution prompt history: a real producer for `prompt_executions` (FI-PE3-C) | Accepted |
+| ADR-086 | Prompt-regression alerting on transitions via ENT-2 (FI-PE3-D) — PE-3 complete | Accepted |
+| ADR-087 | FI-AGT2-A deferred: there is no delegation path to mediate | Accepted |
 
 ## Convention
 
